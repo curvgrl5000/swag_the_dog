@@ -1,5 +1,6 @@
 {
   "name": "wag",
+  "homepage": "https://github.com/curvgrl5000/swag_the_dog",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
