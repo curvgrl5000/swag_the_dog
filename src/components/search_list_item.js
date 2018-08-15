@@ -5,7 +5,7 @@ const SearchListItem = ({img}) => {
 	
 	return (
 		<li className="list-group-item" key={imageUrl.toString()}>
-				<img className="media-object" src={imageUrl}  alt=""  key={imageUrl}/>
+				<img className="media-object" src={imageUrl}  alt=""  key={imageUrl} />
 		</li>
 	);
 };

@@ -56,7 +56,7 @@ render () {
 		        </ul>}
 		     	</div>
 		    </section>
-	    	<SearchResults dogImages={this.state.dogImages} breed={this.state.breed} />
+	    	<SearchResults dogImages={this.state.dogImages} breed={this.state.breed}/>
      	</div>	
     );
   }
