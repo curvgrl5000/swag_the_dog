@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import SearchBar from './components/search_bar';
 import Footer from './components/footer';
+// eslint-disable-next-line
 import registerServiceWorker from './registerServiceWorker';
 
 import './style/style.css';
