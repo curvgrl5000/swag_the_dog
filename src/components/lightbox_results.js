@@ -10,18 +10,41 @@ class LightBoxMain extends Component {
       photoIndex: 0,
       isOpen: false,
     };
+    this.openLightbox = this.openLightbox.bind(this);
+  }
+    
+  openLightbox(event, obj) {
+    console.log('open')
+    this.setState({
+      currentImage: obj.index,
+      isOpen: true,
+    });  
   }
 
   render() {
     const images = this.props.images;
-    const testing = this.props.testing;
+    const breed = this.props.breed;
     const { photoIndex, isOpen } = this.state;
+
+    const dogList = this.props.dogImages.slice(0, 24).map((pic, i) => {
+      return (        
+        <li className="list-group-item" key={pic.toString()}>
+          <img className="media-object" src={pic}  alt=""  key={pic} onClick={() => this.setState({ isOpen: true, photoIndex: i })} />
+        </li>
+      );
+    });
 
     return (
       <div className="lightbox">
-        <button className="decorate" type="button" onClick={() => this.setState({ isOpen: testing })}>
-          Launch Lightbox
-        </button>
+        <div className="lightbox-button">
+          <button className="decorate" type="button" onClick={() => this.setState({ isOpen: true })}>
+            Launch Lightbox
+          </button>
+        </div>
+        <h1 className="breed">{breed}</h1>
+        <ul className="col media-list">
+          {dogList}
+        </ul>
 
         {isOpen && (
           <Lightbox
@@ -45,6 +68,5 @@ class LightBoxMain extends Component {
     );
   }
 }
-
 
 export default LightBoxMain;
