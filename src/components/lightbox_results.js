@@ -14,11 +14,12 @@ class LightBoxMain extends Component {
 
   render() {
     const images = this.props.images;
+    const testing = this.props.testing;
     const { photoIndex, isOpen } = this.state;
 
     return (
       <div className="lightbox">
-        <button className="decorate" type="button" onClick={() => this.setState({ isOpen: true })}>
+        <button className="decorate" type="button" onClick={() => this.setState({ isOpen: testing })}>
           Launch Lightbox
         </button>
 
