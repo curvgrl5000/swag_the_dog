@@ -8,7 +8,7 @@ function Footer() {
       <footer className="curve_detail flex-grid-halves">
         <div className="col">
           <img src={logo} className="wag-logo" alt="logo" />
-          <h4 className="info">© 2018 curve</h4>
+          <h4 className="info">© 2019 curve</h4>
         </div>
         
         <div className="col">

@@ -25,9 +25,15 @@ class LightBoxMain extends Component {
     const images = this.props.images;
     const breed = this.props.breed;
     const { photoIndex, isOpen } = this.state;
+    const totalSize = this.props.dogImages.length;
 
     const dogList = this.props.dogImages.slice(0, 24).map((pic, i) => {
-      return (        
+      
+     if(totalSize > 0 ){ 
+       document.getElementById("mini").className += "hide";
+     }
+     
+      return (
         <li className="list-group-item" key={pic.toString()}>
           <img className="media-object" src={pic}  alt=""  key={pic} onClick={() => this.setState({ isOpen: true, photoIndex: i })} />
         </li>
@@ -43,7 +49,7 @@ class LightBoxMain extends Component {
         </div>
         <h1 className="breed">{breed}</h1>
         <ul className="col media-list">
-          <li className="mini"></li>
+        <li className="mini" id="mini"></li>
           {dogList}
         </ul>
 
