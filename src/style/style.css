@@ -69,6 +69,7 @@ header {
   width: 100%;
   background-color: white;
   height: 285px;
+  height: 250px;
   padding: 40px !important;
   background: url(https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?ixlib=rb-0.3.5…HBfaWQiOjEyMDd9&amp;s=63de746…&amp;w=1000&amp;q=80);
   background-size: 57%;
@@ -132,6 +133,20 @@ ul.col.media-list {
   justify-content: center;
   margin: 0 0 70px 0;
   background-color: #d0b27e;
+  margin: 0 2em 3em;
+  min-height: 250px;
+}
+
+li.mini {
+    width: 100%;
+    opacity: .075;
+    background: url(https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?ixlib=rb-0.3.5…HBfaWQiOjEyMDd9&amp;s=63de746…&amp;w=1000&amp;q=80);
+    height: 220px;
+    background-position: center 39%;
+    background-size: cover;
+    background-blend-mode: luminosity;
+    background-color: #d0b27e;
+    background-repeat: no-repeat;
 }
 
 .select {

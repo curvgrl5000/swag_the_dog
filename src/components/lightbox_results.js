@@ -43,6 +43,7 @@ class LightBoxMain extends Component {
         </div>
         <h1 className="breed">{breed}</h1>
         <ul className="col media-list">
+          <li className="mini"></li>
           {dogList}
         </ul>
 
