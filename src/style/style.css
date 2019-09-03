@@ -417,14 +417,13 @@ button.decorate:hover{
   line-height: 1;
   color: #9e9ba4;
   display: inline-block;
-  font-family: 'Hammersmith One', sans-serif;
+  font-family: 'Merienda One', cursive;
 }
 
 .link--swagger {
-  text-transform: uppercase;
   font-weight: 900;
   overflow: hidden;
-  line-height: 0.75;
+  line-height: 1.5;
   color: #d0b27e;
 }
 
@@ -466,11 +465,10 @@ button.decorate:hover{
 }
 
 i.fas.fa-bone {
-    margin: 20px 10px;
+    margin: 34px 10px;
     color: white;
-    -webkit-transform: rotate(-18deg);
-    -moz-transform: rotate(-18deg);
-
+    -webkit-transform: rotate(-33deg);
+    -moz-transform: rotate(-33deg);
 }
 
 @media screen and (max-width: 414px) {
