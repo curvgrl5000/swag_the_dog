@@ -49,8 +49,8 @@ class LightBoxMain extends Component {
         </div>
         <h1 className="breed">{breed}</h1>
         <ul className="col media-list">
-        <li className="mini" id="mini"></li>
-          {dogList}
+          <li className="mini" id="mini"></li>
+            {dogList}
         </ul>
 
         {isOpen && (
@@ -77,3 +77,4 @@ class LightBoxMain extends Component {
 }
 
 export default LightBoxMain;
+

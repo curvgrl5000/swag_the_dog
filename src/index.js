@@ -31,7 +31,7 @@ class App extends Component {
 	      <header role="banner" className="flex-grid">
 	        	<div className="col">
             <a className="link link--swagger" href="https://curvgrl5000.github.io/swag_the_dog/" data-letters="SwaG">SwaG</a>
-            <i className="fas fa-bone"></i>
+            <a href="https://curvgrl5000.github.io/swag_the_dog/"><i className="fas fa-bone"></i></a>
 	        	</div>
 	      </header>
 	      <SearchBar state={this.state} />

@@ -425,6 +425,7 @@ button.decorate:hover{
   overflow: hidden;
   line-height: 1.5;
   color: #d0b27e;
+  text-shadow: #607d8b 2px 2px 2px;
 }
 
 .link--swagger:hover {
@@ -465,10 +466,49 @@ button.decorate:hover{
 }
 
 i.fas.fa-bone {
-    margin: 34px 10px;
-    color: white;
-    -webkit-transform: rotate(-33deg);
-    -moz-transform: rotate(-33deg);
+  margin: 45px -5px;
+  color: white;
+  -webkit-transform: rotate(-33deg);
+  -moz-transform: rotate(-33deg);
+  -webkit-transform: rotate(350deg) rotateY(0);
+  -webkit-transition: all 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(1, 0.8, 0.5, 1);
+  -moz-transform: rotate(360deg);
+  -moz-transition: all 0.5s;
+  -moz-transition-timing-function: cubic-bezier(1, 0.8, 0.5, 1);
+  -o-transform: rotate(360deg);
+  -o-transition: all 0.5s;
+  -o-transition-timing-function: cubic-bezier(1, 0.8, 0.5, 1);
+  height: 40px;
+}
+
+i.fas.fa-bone:hover {
+  -webkit-transform: rotate(-33deg);
+  -moz-transform: rotate(-33deg);
+  -webkit-transform: rotate(27deg) rotateY(0);
+  -webkit-transition-delay: 0;
+  -o-transition: all 0.5s;
+  -moz-transform: rotate(33deg);
+  -moz-transition-delay: 0;
+  -o-transition: all 0.5s;
+  -o-transform: rotate(0deg);
+  -o-transition-delay: 0;
+  -o-transition: all 0.5s;
+  font-size: 55px;
+}
+
+i.fas.fa-bone:after {
+    content: '';
+    width: 300px;
+    height: 150px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.1);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
 }
 
 @media screen and (max-width: 414px) {

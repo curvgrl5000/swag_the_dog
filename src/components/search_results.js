@@ -8,9 +8,13 @@ const SearchResults = (props) => {
 
   return (
    <section role="search" className="flex-grid results stripes">
-    <LightBoxMain images={props.dogImages} dogImages={props.dogImages} breed={breed} />
-    <div id="bottom-shape"></div>
-    <ScrollButton scrollStepInPx="30" delayInMs="16.66"/>
+     
+     <LightBoxMain images={props.dogImages} dogImages={props.dogImages} breed={breed} />
+    
+     <div id="bottom-shape"></div>
+    
+      <ScrollButton scrollStepInPx="30" delayInMs="16.66"/>
+   
    </section>
   );
 }
