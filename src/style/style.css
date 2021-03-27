@@ -84,6 +84,7 @@ header.accents{
 
 .search {
   background-color: #607D8B;
+  background-color: #669BBC;
 }
 
 .results {
@@ -101,8 +102,8 @@ h1 {
 
 h1.breed {
   font-size: 3.25em;
-  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.59);
-  color: hsl(199, 24%, 76%);
+  text-shadow: 0 0.5rem 1rem rgb(0 0 0 / 59%);
+  color: hsl(199deg 100% 99%);
   -ms-flex-pack: end;
   display: flex;
   -ms-flex-pack: end;
@@ -132,7 +133,7 @@ ul.col.media-list {
   -ms-flex-pack: center;
   justify-content: center;
   margin: 0 0 70px 0;
-  background-color: #d0b27e;
+  background-color: #FDF0D5;
   margin: 0 2em 3em;
   min-height: 250px;
 }
@@ -141,7 +142,7 @@ li.mini {
     width: 100%;
     opacity: .075;
     background: url(https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?ixlib=rb-0.3.5…HBfaWQiOjEyMDd9&amp;s=63de746…&amp;w=1000&amp;q=80);
-    height: 220px;
+    height:50vh;
     background-position: center 39%;
     background-size: cover;
     background-blend-mode: luminosity;
@@ -273,8 +274,10 @@ span.right {
 
 .stripes {
   background-color: #ff1a44;
-  background-color: #d0b27e;
-  background-image: repeating-linear-gradient(45deg, transparent, transparent 19px, #2f1b52 19px, #2f1b52 20px); }
+  background-color: #FDF0D5;;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 19px, #2f1b52 19px, #2f1b52 20px); 
+  background-image: repeating-linear-gradient(45deg, transparent,transparent 19px,#669bbc 0,#2f1b52 20px);
+  }
 
 .scroll {
   border-radius: 5px;
@@ -413,19 +416,23 @@ button.decorate:hover{
   outline: none;
   text-decoration: none;
   position: relative;
-  font-size: 1.75em;
+  font-size: 2.5em;
   line-height: 1;
   color: #9e9ba4;
   display: inline-block;
-  font-family: 'Merienda One', cursive;
+  font-family: sans-serif;
+  letter-spacing: 0.1rem;
+  font-weight: 900;
 }
 
 .link--swagger {
   font-weight: 900;
   overflow: hidden;
-  line-height: 1.5;
-  color: #d0b27e;
-  text-shadow: #607d8b 2px 2px 2px;
+  line-height: 1;
+  color: #fdf0d5;
+  text-shadow:#669bbc 6px 0px 0px;
+  margin: 5px;
+  letter-spacing: .25rem; 
 }
 
 .link--swagger:hover {
@@ -434,13 +441,13 @@ button.decorate:hover{
 
 .link--swagger::after {
   content: '';
-  position: absolute;gi
+  position: absolute;
   height: 16px;
   width: 100%;
-  top: 50%;
+  top: 40%;
   margin-top: -8px;
   right: 0;
-  background: #F9F9F9;
+  background: #cfdb0d;
   transform: translate3d(-100%,0,0);
   transition: transform 0.4s;
   transition-timing-function: cubic-bezier(0.7,0,0.3,1);
@@ -455,9 +462,10 @@ button.decorate:hover{
   position: absolute;
   z-index: 2;
   overflow: hidden;
-  color: #0b0b0b;
+  color: #cfdb0d;
   white-space: nowrap;
   width: 0%;
+  text-shadow: #22244b 6px 0px 0px;
   transition: width 0.4s 0.3s;
 }
 
