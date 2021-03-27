@@ -429,8 +429,8 @@ button.decorate:hover{
   font-weight: 900;
   overflow: hidden;
   line-height: 1;
-  color: #fdf0d5 !important;
-  text-shadow:#669bbc 5px 3px 0px;
+  color: #fdf0d5;
+  text-shadow:#669bbc 5px 5px 0px;
   margin: 5px;
   letter-spacing: .125rem;
   font-family: 'Josefin Sans', sans-serif;
@@ -440,8 +440,31 @@ button.decorate:hover{
 
 }
 
+.link--swagger::first-letter {
+  font-size: 1.5em;
+}
+
 .link--swagger:hover {
-  color: #b2b0a9;
+  color: #bec0c2;
+  text-shadow: #22244b 5px 5px 0px;
+}
+
+
+.link--swagger::before {
+  content: "S";
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+  color: #cfdb0d;
+  white-space: nowrap;
+  width: 0%;
+  text-shadow: #22244b 5px 5px 0px;
+  transition: width 0.4s 0.3s;
+  font-size: 1.5em;
+}
+
+.link--swagger:hover::before {
+  width: 100%;
 }
 
 .link--swagger::after {
@@ -462,33 +485,9 @@ button.decorate:hover{
   transform: translate3d(100%,0,0);
 }
 
-.link--swagger::before {
-  content: attr(data-letters);
-  position: absolute;
-  z-index: 2;
-  overflow: hidden;
-  color: #cfdb0d;
-  white-space: nowrap;
-  width: 0%;
-  text-shadow: #22244b 5px 3px 0px;
-  transition: width 0.4s 0.3s;
-}
-
-.link--swagger:hover::before {
-  width: 100%;
-}
-
-.link--swagger span {
-    font-size: 1.5em;
-}
-
-.link--swagger[span]::before {
-  font-size: 1.5em;
-}   
-
 
 i.fas.fa-bone {
-  margin: 45px -5px;
+  margin: 50px -5px;
   color: white;
   -webkit-transform: rotate(-33deg);
   -moz-transform: rotate(-33deg);
