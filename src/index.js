@@ -30,7 +30,7 @@ class App extends Component {
 	      <div id="top-shape"></div>
 	      <header role="banner" className="flex-grid">
 	        	<div className="col">
-            <a className="link link--swagger" href="https://curvgrl5000.github.io/swag_the_dog/" data-letters="SWAG">SWAG</a>
+            <a className="link link--swagger" href="https://curvgrl5000.github.io/swag_the_dog/" data-letters="SWAG"><span>S</span>WAG</a>
             <a href="https://curvgrl5000.github.io/swag_the_dog/"><i className="fas fa-bone"></i></a>
 	        	</div>
 	      </header>

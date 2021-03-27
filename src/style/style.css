@@ -52,7 +52,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   color: #393a3c;
-  background-color: #1b4265 !important;
+  background-color: #669bbc !important
 }
 
 .flex-grid, .flex-grid-thirds, .flex-grid-halves { 
@@ -429,10 +429,15 @@ button.decorate:hover{
   font-weight: 900;
   overflow: hidden;
   line-height: 1;
-  color: #fdf0d5;
-  text-shadow:#669bbc 6px 0px 0px;
+  color: #fdf0d5 !important;
+  text-shadow:#669bbc 5px 3px 0px;
   margin: 5px;
-  letter-spacing: .25rem; 
+  letter-spacing: .125rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  transform: rotate(-5deg)
+             skew(-5deg);
+
 }
 
 .link--swagger:hover {
@@ -442,7 +447,7 @@ button.decorate:hover{
 .link--swagger::after {
   content: '';
   position: absolute;
-  height: 16px;
+  height: 10px;
   width: 100%;
   top: 40%;
   margin-top: -8px;
@@ -465,13 +470,22 @@ button.decorate:hover{
   color: #cfdb0d;
   white-space: nowrap;
   width: 0%;
-  text-shadow: #22244b 6px 0px 0px;
+  text-shadow: #22244b 5px 3px 0px;
   transition: width 0.4s 0.3s;
 }
 
 .link--swagger:hover::before {
   width: 100%;
 }
+
+.link--swagger span {
+    font-size: 1.5em;
+}
+
+.link--swagger[span]::before {
+  font-size: 1.5em;
+}   
+
 
 i.fas.fa-bone {
   margin: 45px -5px;
