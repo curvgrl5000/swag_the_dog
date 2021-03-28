@@ -42,11 +42,15 @@ class LightBoxMain extends Component {
 
     return (
       <div className="lightbox">
+        
+        {totalSize > 0 && (
         <div className="lightbox-button">
           <button className="decorate" type="button" onClick={() => this.setState({ isOpen: true })}>
             Launch Lightbox
           </button>
         </div>
+        )}
+
         <h1 className="breed">{breed}</h1>
         <ul className="col media-list">
           <li className="mini" id="mini"></li>

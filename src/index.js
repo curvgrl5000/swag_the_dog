@@ -7,7 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 import './style/style.css';
 
-class App extends Component {
+class App extends Component {ril__imag
 	constructor(props) {
  		super(props);
  		this.state = { 

@@ -60,7 +60,6 @@ body {
 }
 
 .col {
-  /*background: salmon;*/
   padding: 15px;
   display: flex;
 }
@@ -373,14 +372,6 @@ li.social-icons {
     color: white;
 }
 
-/*.lightbox {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    margin: 1em 3em 0 0.6em;
-}*/
-
 .lightbox{
     margin: 1.5em 3em;
 }
@@ -390,6 +381,12 @@ li.social-icons {
     -ms-flex-pack: end;
     justify-content: flex-end;
     margin: 1em 1.5em 0 .6em;
+}
+
+.ril-image-current.ril__image {
+  box-shadow: -6px -6px 0px #adc4db, 6px 6px 0px #c81016;
+  min-height: 30vh;
+  max-height: 50vh;
 }
 
 button {
@@ -431,8 +428,7 @@ button.decorate:hover{
   line-height: 1.125;
   color: #fdf0d5;
   text-shadow:#669bbc 5px 5px 0px;
-  margin: 5px;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
   transform: scale(0.85, 0.9) rotate(-5deg)
@@ -452,7 +448,6 @@ button.decorate:hover{
   transition: 0.8s all linear;
 }
 
-
 .link--swagger::before {
   content: "S";
   position: absolute;
@@ -465,7 +460,6 @@ button.decorate:hover{
   transition: width 0.4s 0.3s;
   font-size: 1.5em;
 }
-
 
 .link--swagger:hover::before {
   width: 100%;
@@ -594,8 +588,8 @@ i.fas.fa-bone:after {
     font-size: 3.125em;
   }
   header {
-    background-size: 62%;
-    background-position: right 50%;
+    background-size: 60%;
+    background-position: right 65%;
     transition: 0.8s all linear;
 
   }
