@@ -428,14 +428,14 @@ button.decorate:hover{
 .link--swagger {
   font-weight: 900;
   overflow: hidden;
-  line-height: 1;
+  line-height: 1.125;
   color: #fdf0d5;
   text-shadow:#669bbc 5px 5px 0px;
   margin: 5px;
-  letter-spacing: .125rem;
+  letter-spacing: 5px;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
-  transform: rotate(-5deg)
+  transform: scale(0.85, 0.9) rotate(-5deg)
              skew(-5deg);
 
 }
@@ -445,8 +445,11 @@ button.decorate:hover{
 }
 
 .link--swagger:hover {
-  color: #bec0c2;
+  color: #adc4db;
   text-shadow: #22244b 5px 5px 0px;
+  transform: scale(1, 1) rotate(-5deg) skew(-5deg);
+  text-shadow: 0px 0px 0px #adc4db, 3px 3px 0px #c81016, 6px 5px 0px #22244b;
+  transition: 0.8s all linear;
 }
 
 
@@ -463,6 +466,7 @@ button.decorate:hover{
   font-size: 1.5em;
 }
 
+
 .link--swagger:hover::before {
   width: 100%;
 }
@@ -472,7 +476,7 @@ button.decorate:hover{
   position: absolute;
   height: 10px;
   width: 100%;
-  top: 40%;
+  top: 50%;
   margin-top: -8px;
   right: 0;
   background: #cfdb0d;
@@ -485,13 +489,12 @@ button.decorate:hover{
   transform: translate3d(100%,0,0);
 }
 
-
 i.fas.fa-bone {
-  margin: 50px -5px;
+  margin: 50px -10px;
   color: white;
   -webkit-transform: rotate(-33deg);
   -moz-transform: rotate(-33deg);
-  -webkit-transform: rotate(350deg) rotateY(0);
+  -webkit-transform: rotate(333deg) rotateY(0);
   -webkit-transition: all 0.5s;
   -webkit-transition-timing-function: cubic-bezier(1, 0.8, 0.5, 1);
   -moz-transform: rotate(360deg);
@@ -515,7 +518,8 @@ i.fas.fa-bone:hover {
   -o-transform: rotate(0deg);
   -o-transition-delay: 0;
   -o-transition: all 0.5s;
-  font-size: 55px;
+  font-size: 45px;
+  text-shadow: 0px 0px 0px #adc4db, 3px 3px 0px #c81016, 6px 5px 0px #22244b;
 }
 
 i.fas.fa-bone:after {
