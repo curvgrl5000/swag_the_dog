@@ -385,8 +385,6 @@ li.social-icons {
 
 .ril-image-current.ril__image {
   box-shadow: -6px -6px 0px #adc4db, 6px 6px 0px #c81016;
-  min-height: 30vh;
-  max-height: 50vh;
 }
 
 button {
