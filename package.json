@@ -8,9 +8,9 @@
     "react-scripts": "1.1.4"
   },
   "dependencies": {
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-image-lightbox": "^5.0.0"
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-image-lightbox": "^5.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
